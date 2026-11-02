@@ -12,7 +12,24 @@ header {
     height: 78px;
 }
 
-#top_row {
-    display: flex;
-    justify-content: center;
+#total_box {
+
+}
+
+#top_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+}
+
+#great_deals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: left;
+}
+
+#cart_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: left;
 }
