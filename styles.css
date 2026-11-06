@@ -29,6 +29,20 @@ h3, p, div {
     border-radius: 10px;
     background-color: #E1E68B;
     margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#Productspage_button img {
+    width: 4rem;
+    height: 4rem;
+    background-color: #E1E68B;
 }
 
 #total_box {
@@ -76,6 +90,7 @@ h3, p, div {
     border: 2px solid #6C883C;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 #top_columns {
@@ -97,11 +112,13 @@ h3, p, div {
     justify-content: left;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 #cart_cards {
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 #top_of_card{
@@ -110,8 +127,6 @@ h3, p, div {
     grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     gap: 5px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
 }
 
 #top_of_card #circle {
@@ -139,18 +154,54 @@ h3, p, div {
 }
 
 #top_of_card #delete {
-    justify-self: end;
-    width: 56px;
-    height: 56px;
-    background-color: white;
+  justify-self: end;
+  align-self: start;
+  background-color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  width: auto;
+  margin: 0;
 }
 
-#middle_of_card{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
+#top_of_card #delete img {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+}
+
+#middle_of_card #product_name {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.75rem 0;
+}
+
+#middle_of_card #price_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem 1rem;
+}
+
+#middle_of_card .price_label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#middle_of_card #total_price {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#middle_of_card #unit_price {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 #bottom_of_card {
@@ -183,4 +234,12 @@ h3, p, div {
   display: block;
    background-color: white;
    color: black;
+}
+
+#horz_line {
+    justify-self: center;
+    border: 4px solid #284A39;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 95%
 }
