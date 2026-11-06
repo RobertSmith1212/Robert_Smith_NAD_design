@@ -12,11 +12,7 @@ header {
     height: 60px;
 }
 
-h3 {
-    background-color: white;
-}
-
-p {
+h3, p, div {
     background-color: white;
 }
 
@@ -32,6 +28,7 @@ p {
     border: 1px solid #284A39;
     border-radius: 10px;
     background-color: #E1E68B;
+    margin: 2rem;
 }
 
 #total_box {
@@ -44,7 +41,7 @@ p {
     height: 230px;
     justify-content: center;
     align-items: center;
-    margin: ;
+    margin-left: 2rem;
 }
 
 #inside_order_box {
@@ -57,12 +54,13 @@ p {
     height: 6rem;
     gap: 2rem;
     padding: 2rem;
+    font-size: larger;
 }
 
 #order_sum {
     font-weight: bold;
     background-color: #A7AB5C;
-    width: 40%;
+    width: 50%;
     border-radius: 8px;
 }
 
@@ -70,13 +68,14 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #284A39;
-    width: 80%;
+    width: 501px;
     height: 4rem;
     font-size: 2rem;
     color: #FDFFE2;
     border-radius: 10px;
     border: 2px solid #6C883C;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 #top_columns {
@@ -96,6 +95,8 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 29px;
     justify-content: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #cart_cards {
@@ -105,10 +106,43 @@ p {
 
 #top_of_card{
     background-color: white;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     gap: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#top_of_card #circle {
+  justify-self: start;
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: #FDFFE2;
+}
+
+#top_of_card #circle p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background-color: #FDFFE2;
+}
+#top_of_card #mesa_C {
+    justify-self: center;
+    background-color: white;
+    height: 140px;
+    width: auto;
+}
+
+#top_of_card #delete {
+    justify-self: end;
+    width: 56px;
+    height: 56px;
+    background-color: white;
 }
 
 #middle_of_card{
@@ -125,17 +159,28 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 }
 
-#circle {
-    background-color: white;
-    border-radius: 100%;
-    background-color: #FDFFE2;
+#bottom_of_card p {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+   font-size: 15px;
 }
 
-#mesa_C {
-    background-color: white;
-    height: 96px;
-    width: 62px;
+.qty_btn {
+  background-color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0; 
+}
+
+.qty_btn img {
+  width: 40px;
+  height: 40px;
+  display: block;
+   background-color: white;
+   color: black;
 }
