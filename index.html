@@ -7,7 +7,7 @@
     <title>Robert Smith Cart Page</title>
     <body>
     <header>
-        <img>
+        <img src="images/naturally_a_deal_logo.png" alt="NAT_logo">
         <form class="searchbar" action="/search">
              <label for="search" class="visually-hidden">Search</label>
              <input type="search" id="search" name="q" placeholder="Search...">
@@ -15,29 +15,31 @@
         </form>
         <img>
         <p>$80.26</p>
-        <img>
         <nav>
             <a>Home</a>
             <a>Products</a>
             <a>Store</a>
         </nav>
+        <img src="images/account_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="account_circle">
     </header>
     </head>
 
         <main>
+            <section id="top_row">
+                <button id="Productspage_button"><img src="images/arrow_left_alt_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="left_arrow">Products Page</button>
+                <h2>Other Great Deals:</h2>
+            </section>
             <section id="top_columns">
                 <section id="total_box">
-                    <button id="Productspage_button">Products Page</button>
                 <h3>Order Summary:</h3>
                 <div id="inside_order_box">
                     <p>Subtotal: $80.00</p>
                     <p>Tax: $0.26</p>
-                    <p>Order Total: $86.26</p>
+                    <p id="order_sum">Order Total: $86.26</p>
                 </div>
                 </section>
                 
                 <section id="great_deals">
-                    <h2>Other Great Deals:</h2>
                 <div id="great_deals_box">
                     <img>
                     <p>Natures Path Organic Mesa Sunrise Cerael (Gluten free)</p>
@@ -93,6 +95,8 @@
                     </div>
                 </div>
                 </section>
+            
+                <button id="payment_button">Continue to Payment</button>
             </section>
             
             <hr>
@@ -133,20 +137,23 @@
                 </section>
 
                 <section id="cart_cards">
-                    <img>
-                    <img>
-                    <img>
-                    <p>Natures Path Organic Mesa Sunrise Cerael (Gluten free)</p>
-                    <p>Total</p>
-                    <p>Price</p>
-                    <p>$38.12</p>
-                    <p>$3.17 each</p>
-                    <div>
-                        <img>
-                        <p>12</p>
-                        <img>
+                    <div id="top_of_card">
+                        <div id="circle"><p>D</p></div>
+                        <img src="images/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="delete" alt="delete">
+                        <img src="images/MesaC.png" id="mesa_C" alt="mesa_C">
                     </div>
-                </div>
+                    <div id="middle_of_card">
+                        <p>Natures Path Organic Mesa Sunrise Cerael (Gluten free)</p>
+                        <p>Total</p>
+                        <p>Price</p>
+                        <p>$38.12</p>
+                        <p>$3.17 each</p>
+                    </div>
+                    <div id="bottom_of_card">
+                        <img src="images/add_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+                        <p>12</p>
+                        <img src="images/do_not_disturb_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+                    </div>
                 </section>
 
                 <section id="cart_cards">

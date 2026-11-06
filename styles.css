@@ -9,11 +9,74 @@ header {
     display: flex;
     justify-content: center;
     background-color: #284A39;
-    height: 78px;
+    height: 60px;
+}
+
+h3 {
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
+
+#top_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: left;
+}
+
+#Productspage_button {
+    width: 190.06px;
+    height: 56.88px;
+    border: 1px solid #284A39;
+    border-radius: 10px;
+    background-color: #E1E68B;
 }
 
 #total_box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 501px;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    margin: ;
+}
 
+#inside_order_box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 80%;
+    height: 6rem;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#order_sum {
+    font-weight: bold;
+    background-color: #A7AB5C;
+    width: 40%;
+    border-radius: 8px;
+}
+
+#payment_button {
+    justify-content: center;
+    align-items: center;
+    background-color: #284A39;
+    width: 80%;
+    height: 4rem;
+    font-size: 2rem;
+    color: #FDFFE2;
+    border-radius: 10px;
+    border: 2px solid #6C883C;
+    margin-bottom: 2rem;
 }
 
 #top_columns {
@@ -31,5 +94,48 @@ header {
 #cart_row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 29px;
     justify-content: left;
+}
+
+#cart_cards {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#top_of_card{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+#middle_of_card{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+#bottom_of_card {
+    background-color: white;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+#circle {
+    background-color: white;
+    border-radius: 100%;
+    background-color: #FDFFE2;
+}
+
+#mesa_C {
+    background-color: white;
+    height: 96px;
+    width: 62px;
 }
